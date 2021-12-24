@@ -1,0 +1,96 @@
+<!--
+  MousePager options page.
+-->
+
+<html>
+<head>
+  <title>Mouse Pager</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+  h1 {
+    margin-top: 20px;
+    text-align: center;
+  }
+  body {
+    width: 50%;
+    margin: auto;
+  }
+  body, table {
+    font-family: PT Sans, sans-serif;
+    font-size: 16px;
+  }
+  td {
+    vertical-align: top;
+    padding: 5px;
+    padding-top: 15px;
+  }
+  </style>
+  <script src="../js/options-page.js"></script>
+</head>
+<body>
+  <h1>Mouse Pager options</h1>
+  <table>
+    <thead>
+      <th>Action</th>
+      <th>What it does</th>
+      <th>Enable</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>Primary&nbsp;Button&nbsp;+<br />Scroll</b></td>
+        <td>Scroll by page.</td>
+        <td><input id="prim+scroll" type="checkbox" /></td>
+      </tr>
+
+      <tr>
+        <td><b>Primary&nbsp;Button&nbsp;+<br />Middle Button +<br/ >Scroll</b></td>
+        <td>Jump to page top or bottom.</td>
+        <td><input id="prim+middle+scroll" type="checkbox" /></td>
+      </tr>
+
+      <tr>
+        <td><b>Middle&nbsp;Button&nbsp;+<br />Scroll</b></td>
+        <td>Scroll through current window's tabs.</td>
+        <td><input id="middle+scroll" type="checkbox" /></td>
+      </tr>
+
+      <tr>
+        <td><b>Shift&nbsp;Key&nbsp;+<br />Scroll</b></td>
+        <td>Horizontal scroll. Somtimes, it only works when hovering over
+          horizontal scroll bar.</td>
+        <td><input id="shift+scroll" type="checkbox" /></td>
+      </tr>
+
+      <tr>
+        <td><b>Middle&nbsp;Button&nbsp;+<br />Double Click</b></td>
+        <td>Close page. This won't close the last open window, or a pinned tab.</td>
+        <td><input id="middle+dblclick" type="checkbox" /></td>
+      </tr>
+
+      <tr>
+        <td><b>Clear Selection after mouse events</b></td>
+        <td>
+          <p>If any of the above actions created a text selection, clear it
+          right away. Checking this means that you can't make a text selection
+          with any of the actions above.</p>
+
+          <p>This may be useful when working with a mouse, as opposed to a
+          trackball.</p>
+        </td>
+        <td><input id="clearselection" type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="margin-top: 10px">
+    <input id="save" type="button" value="Save Options"/>
+    <span style="margin-left: 30px; visibility: hidden"
+      id="save-confirmation">Options saved</span>
+  </div>
+</body>
+</html>
+
+<!--
+vim:set tw=80:
+-->

@@ -1,0 +1,26 @@
+{
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "content_scripts" : [{
+      "all_frames": true,
+      "js": ["js/mousepager.js"],
+      "matches": ["<all_urls>", "file:///*/*"],
+      "run_at": "document_start"
+  }],
+  "description": "Page navigation made easier with mouse",
+  "icons": {
+    "48": "res/mouse.png"
+  },
+  "manifest_version": 2,
+  "name": "MousePager",
+  "options_ui": {
+    "open_in_tab": true,
+    "page": "res/options.html"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "version": "1.0"
+}
