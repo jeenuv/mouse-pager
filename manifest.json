@@ -19,8 +19,7 @@
     "page": "res/options.html"
   },
   "permissions": [
-    "storage",
-    "tabs"
+    "storage"
   ],
   "version": "1.0"
 }
