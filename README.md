@@ -12,6 +12,11 @@ with mouse scroll wheel. Features can be individually toggled.
 
 Works for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/mousepager/) and Chrome.
 
+See the screen shot below for the extension in action. Note that the mouse
+pointer doesn't need to be moved at all!
+
+![demo](files/demo.gif)
+
 ## Instructions for local build
 
 ```sh
@@ -20,3 +25,11 @@ make
 ```
 
 Load extension from the directory `mouse-pager-VV`.
+
+To build the `zip` file:
+
+```sh
+make zip
+```
+
+<!-- vim: set tw=80 spell: -->
