@@ -10,7 +10,7 @@ with mouse scroll wheel. Features can be individually toggled.
 * Horizontal scroll;
 * Close current tab;
 
-Works for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/mousepager/)
+Works for [Firefox](https://addons.mozilla.org/firefox/addon/mousepager/)
 and
 [Chrome](https://chrome.google.com/webstore/detail/mousepager/maeabmogjjihlmfpchibpipfcepkmjhf).
 
